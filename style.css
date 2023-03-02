@@ -1,0 +1,57 @@
+body{
+    margin: 0;
+    /* border: 5px solid blue; */
+    background-color: rgb(235, 196, 145);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.slider-container{
+    /* visibility: hidden; */
+    position: relative;
+    height: 300px;
+    width: 500px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow:0 4px 6px rgba(0,0,0.3) ;
+    background-color: lightgray;
+}
+
+.img-container {
+    display: flex;
+    transition: transform .5s ease-in-out;
+}
+
+
+
+.btn{
+    /* move top left corner of object to start of container top left corner of slider container  */
+    position: absolute;
+    color: white;
+    /* move top left corner of object to center of container  */
+    top: 50%;
+    /* move center of object to center of container  */
+    /* transform: translate(-50%, -50%); */
+    transform: translateY(-50%);
+    opacity: 50%;
+    cursor: pointer;
+    
+}
+
+.btn.prev{
+    /* move it 10px away from container left edge  */
+    left: 10px;
+}
+
+.btn.next{
+    /* move it 10px away from container right edge  */    
+    right: 10px; 
+}
+
+
+.btn:hover{
+    opacity: 100%;
+}
